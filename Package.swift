@@ -7,6 +7,8 @@ import PackageDescription
 #if os(Linux)
 let platformExcludes: [String] = [
     // Linux specific excludes
+    "framework",
+    "include-framework",
     "metal-cpp",
     // Exclude Metal backend files on Linux, but keep no_metal.cpp for stubs
     "mlx/mlx/backend/metal/allocator.cpp",
